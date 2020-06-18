@@ -1,0 +1,45 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="./dist/bundler.js"></script>
+</head>
+<body onload='ui.getArtistsInfoForTitles()'>
+ <!--onload='ui.getArtistsInfoForTitles()'-->
+  <div>
+    <h1>Example Client Title Data</h1>
+    <p>
+      <label>Title Id:</label> <input id="title_id" placeholder="enter title id"></p>
+    <p>
+      <label>Title Name:</label>
+      <input id="title_name" placeholder="enter title name">
+    </p>
+    <p>
+      <label>Singer Name:</label>
+      <select id='singer'>
+        <option value=" ">-- Select --</option>
+      </select>
+    </p>
+    <p>
+      <label>Director Name:</label>
+      <select id='director'>
+        <option value=" ">-- Select --</option>
+      </select>
+    </p>
+    <p>
+      <label>Lyrisist:</label>  <select id='lyrisist'>
+        <option value=" ">-- Select --</option>
+         </select>
+      <button id="add" onclick='ui.addTitleInfo();'>Add Titles</button><br>
+      <label id='mydata' style='color:green'></label>
+     
+      <button onclick='ui.getMyTitles();'>List Titles</button>
+    </p>
+  </div>
+  <div>
+    <p id="result"></p>
+  </div>
+</body>
+</html>

@@ -1,0 +1,5 @@
+{
+    "silent": false,
+    "waitForLinting": true,
+    "warningsAsError": true
+}

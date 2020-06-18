@@ -1,0 +1,27 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+   <script src="./dist/bundler.js"></script>
+ </head>
+ <body>
+  <div>
+    <h1>Example Client Artist Data</h1>
+    <p>
+    <label>Artist Id:</label> <input id="artist_id" placeholder="enter artist id"></p>
+    <p>
+    <label>Artist Name:</label> 
+    <input id="artist_name" placeholder="enter artist name">
+    </p>
+    <p>
+    <label>Profession:</label> <input id="profession" placeholder="enter profession">
+    <button id="add" onclick="ui.addArtistInfo();">Add Artist</button><br>
+     <label id='mydata' style='color:green'></label>
+    </p>
+  </div>
+   <div><button id="add" onclick="ui.getArtists();">List Artists</button>
+  <p id ="result"></p></div>
+ 
+</body>
+</html>
